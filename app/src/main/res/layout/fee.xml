@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/default_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:text="停车费用详情"
+        android:textSize="36sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="本次入库时间："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/intime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dip"
+                android:textColor="#000000"
+                android:text="暂时没有显示"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="本次出库时间："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/outtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dip"
+                android:textColor="#000000"
+                android:text="暂时没有显示"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="本次停车时间："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/parkingtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dip"
+                android:textColor="#000000"
+                android:text="暂时没有显示"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:text="本次应缴费用："
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/feetopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dip"
+                android:textColor="#000000"
+                android:text="暂时没有显示"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/refresh2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="#2E6894"
+                android:textColor="#FFFFFF"
+                android:text="刷 新 信 息"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/fastpay"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#FFFFFF"
+                android:background="#377EB3"
+                android:text="快 速 缴 费"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="12dip"
+                android:textColor="#FFFFFF"
+                android:background="#4C92C8"
+                android:text=" 返          回"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
